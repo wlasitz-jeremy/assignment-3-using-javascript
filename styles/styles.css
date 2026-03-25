@@ -37,7 +37,41 @@ body {
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
-
+h1 {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.large-text {
+  font-size: 24px;
+}
+.fake-button {
+  background-color: #e5af42;
+  display: flex;
+  justify-content: center;
+  line-height: 3;
+  border: 1px solid black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a main:hover,
+a footer:hover {
+  text-decoration: underline;
+}
+.fake-button:hover,
+.blue-hover:hover {
+  text-decoration: underline;
+  background-color: #4278e5;
+  color: white;
+  cursor: pointer;
+}
 /************* header/footer styling *************/
 
 /* TO DO:
@@ -47,7 +81,34 @@ body {
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
+header,
+footer {
+  background-color: #e5af42;
+}
+header {
+  height: 150px;
+}
+header img {
+  width: 100px;
+  height: 100px;
+  padding: 25px 0px 25px 25px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+main {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
 
+footer p {
+  height: 60px;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /************* index page *************/
 
 /* TO-DO: 
@@ -57,6 +118,21 @@ body {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
+main img {
+  width: 300px;
+  margin-bottom: 50px;
+  padding-left: 25px;
+}
+h2 {
+  line-height: 36px;
+}
+p {
+  padding-bottom: 12px;
+}
+.fake-button {
+  width: 250px;
+  margin-right: 150px;
+}
 
 /************* bookings page *************/
 
