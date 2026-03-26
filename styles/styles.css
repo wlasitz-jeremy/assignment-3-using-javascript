@@ -104,15 +104,14 @@ main {
   margin-top: 25px;
   margin-bottom: 50px;
 }
-footer {
-  font-weight: 200;
-}
 footer p {
+  font-weight: 200;
   display: flex;
-  justify-content: center;
-  text-align: center;
   height: 60px;
+  justify-content: center;
+  align-items: center;
 }
+
 /************* index page *************/
 
 /* TO-DO: 
@@ -135,7 +134,7 @@ p {
 }
 .fake-button {
   width: 250px;
-  margin-right: 150px;
+  margin-left: 150px;
 }
 
 /************* bookings page *************/
