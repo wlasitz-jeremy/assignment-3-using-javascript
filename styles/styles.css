@@ -97,17 +97,21 @@ header img {
   display: flex;
   align-items: center;
 }
+h1 {
+  flex: 1;
+}
 main {
   margin-top: 25px;
   margin-bottom: 50px;
 }
-
-footer p {
-  height: 60px;
+footer {
   font-weight: 200;
+}
+footer p {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  height: 60px;
 }
 /************* index page *************/
 
