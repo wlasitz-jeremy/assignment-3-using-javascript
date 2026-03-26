@@ -104,14 +104,17 @@ main {
   margin-top: 25px;
   margin-bottom: 50px;
 }
-footer p {
+footer {
+  height: 60px;
   font-weight: 200;
   display: flex;
-  height: 60px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-
+footer p {
+  padding-bottom: 0px;
+}
 /************* index page *************/
 
 /* TO-DO: 
