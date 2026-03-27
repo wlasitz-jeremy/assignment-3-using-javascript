@@ -111,9 +111,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-footer p {
-  padding-bottom: 0px;
-}
+
 /************* index page *************/
 
 /* TO-DO: 
@@ -131,10 +129,10 @@ main img {
 h2 {
   line-height: 36px;
 }
-p {
+main p {
   padding-bottom: 12px;
 }
-.fake-button {
+.large-text {
   width: 250px;
   margin-left: 150px;
 }
@@ -157,14 +155,11 @@ p {
   flex-direction: column;
   align-items: center;
   font-size: 18px;
+  margin-left: 175px;
+  margin-right: 175px;
 }
 .day-selector {
   margin-bottom: 12px;
-}
-.blue-hover {
-  margin: 0px 10px;
-  width: 60px;
-  border: 1px solid black;
 }
 #monday,
 #tuesday,
@@ -173,6 +168,9 @@ p {
 #friday {
   display: flex;
   justify-content: center;
+  margin: 0px 10px;
+  width: 60px;
+  border: 1px solid black;
 }
 .small-button {
   border: 1px solid black;
@@ -188,6 +186,9 @@ p {
 .clicked {
   background-color: #e5af42;
 }
+.booking-page p {
+  padding-bottom: 0px;
+}
 /************* contact page *************/
 /* TO DO:
     - the main section of the .contact page will be 420px tall, and centered.
@@ -196,12 +197,46 @@ p {
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
-.contact {
+#contact-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 420px;
+  align-items: center;
+  max-height: 420px;
 }
-#user-message {
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+textarea {
   max-height: 150px;
+  min-height: 150px;
+  max-width: 300px;
+  min-width: 300px;
+  vertical-align: top;
+}
+label {
+  width: 150px;
+  text-align: right;
+  margin-right: 24px;
+}
+input {
+  width: 300px;
+}
+div {
+  margin-bottom: 24px;
+}
+#submit-button,
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+#submit-button {
+  display: block;
+  padding: 0px;
+  margin-left: 174px;
+  width: 306px;
+  height: 50px;
 }
