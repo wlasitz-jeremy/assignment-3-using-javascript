@@ -25,6 +25,7 @@ days.forEach((day) => {
       day.classList.add("clicked");
       number_of_days_selected++;
     }
+    calculate();
   });
 });
 /********* clear days *********/
