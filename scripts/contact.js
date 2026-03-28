@@ -2,12 +2,16 @@
 const submitButton = document.getElementById("submit-button");
 const contactPage = document.getElementById("contact-page");
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
-function Message(event) {
+
+submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   contactPage.innerHTML = "";
   const p = document.createElement("p");
   p.textContent = "Thank you for your message";
   p.style.fontSize = "24px";
-  contactPage.appendChild(p);
-}
-submitButton.addEventListener("click", Message);
+  p.style.textAlign = "center";
+  p.style.marginTop = "25px";
+  p.style.marginBottom = "50px";
+  p.style.height = "404px";
+  contactPage.replaceWith(p);
+});
