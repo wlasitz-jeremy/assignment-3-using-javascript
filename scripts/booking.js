@@ -32,6 +32,8 @@ days.forEach((day) => {
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 clearButton.addEventListener("click", () => {
   days.forEach((day) => day.classList.remove("clicked"));
+  full.classList.add("clicked");
+  half.classList.remove("clicked");
   number_of_days_selected = 0;
   calculatedCost.innerHTML = "0";
 });
