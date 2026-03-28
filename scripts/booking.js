@@ -30,9 +30,9 @@ days.forEach((day) => {
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 clearButton.addEventListener("click", () => {
-  days.forEach((day) => day.classlist.remove("clicked"));
+  days.forEach((day) => day.classList.remove("clicked"));
   number_of_days_selected = 0;
-  calculatedCost.innerHTML = "$0";
+  calculatedCost.innerHTML = "0";
 });
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
@@ -53,5 +53,5 @@ full.addEventListener("click", () => {
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 function calculate() {
   const total = cost_per_day * number_of_days_selected;
-  calculatedCost.innerHTML = `$${total}`;
+  calculatedCost.innerHTML = `${total}`;
 }
