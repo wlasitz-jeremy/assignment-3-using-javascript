@@ -8,10 +8,6 @@ submitButton.addEventListener("click", (event) => {
   contactPage.textContent = "";
   const p = document.createElement("p");
   p.textContent = "Thank you for your message";
-  p.style.fontSize = "24px";
-  p.style.textAlign = "center";
-  p.style.marginTop = "25px";
-  p.style.marginBottom = "50px";
-  p.style.height = "386px";
+  p.classList.add("message");
   contactPage.appendChild(p);
 });
