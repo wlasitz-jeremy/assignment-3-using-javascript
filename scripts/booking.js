@@ -35,7 +35,7 @@ clearButton.addEventListener("click", () => {
   full.classList.add("clicked");
   half.classList.remove("clicked");
   number_of_days_selected = 0;
-  calculatedCost.innerHTML = "0";
+  calculatedCost.textContent = "0";
 });
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
@@ -56,5 +56,5 @@ full.addEventListener("click", () => {
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 function calculate() {
   const total = cost_per_day * number_of_days_selected;
-  calculatedCost.innerHTML = `${total}`;
+  calculatedCost.textContent = `${total}`;
 }
