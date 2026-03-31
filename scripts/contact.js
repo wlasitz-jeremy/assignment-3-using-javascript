@@ -13,5 +13,5 @@ submitButton.addEventListener("click", (event) => {
   p.style.marginTop = "25px";
   p.style.marginBottom = "50px";
   p.style.height = "404px";
-  contactPage.replaceWith(p);
+  contactPage.appendChild(p);
 });
