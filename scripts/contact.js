@@ -12,6 +12,6 @@ submitButton.addEventListener("click", (event) => {
   p.style.textAlign = "center";
   p.style.marginTop = "25px";
   p.style.marginBottom = "50px";
-  p.style.height = "404px";
+  p.style.height = "386px";
   contactPage.appendChild(p);
 });
