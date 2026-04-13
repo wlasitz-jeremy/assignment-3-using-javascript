@@ -33,6 +33,7 @@ days.forEach((day) => {
 clearButton.addEventListener("click", () => {
   days.forEach((day) => day.classList.remove("clicked"));
   full.classList.add("clicked");
+  full.click();
   half.classList.remove("clicked");
   number_of_days_selected = 0;
   calculatedCost.textContent = "0";
