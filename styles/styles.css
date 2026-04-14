@@ -105,6 +105,7 @@ main {
 }
 footer {
   height: 90px;
+  /* changed to 90 px because the original height was 60px but it doesnt look nice */
   font-weight: 200;
   display: flex;
   justify-content: center;
